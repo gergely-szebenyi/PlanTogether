@@ -49,25 +49,27 @@ class MainActivity : ComponentActivity() {
 // Remove later
 @Composable
 private fun ThemeSample() {
-    val colors = listOf(
-        "Primary Dark" to PrimaryDark,
-        "Primary Medium" to PrimaryMedium,
-        "Accent" to Accent,
-        "Background" to BackgroundLight,
-        "Text Primary" to TextPrimary,
-        "Text Secondary" to TextSecondary,
-        "Text Muted" to TextMuted,
-        "Placeholder" to Placeholder,
-        "Border" to Border,
-        "Error" to Error,
-    )
+    val colors =
+        listOf(
+            "Primary Dark" to PrimaryDark,
+            "Primary Medium" to PrimaryMedium,
+            "Accent" to Accent,
+            "Background" to BackgroundLight,
+            "Text Primary" to TextPrimary,
+            "Text Secondary" to TextSecondary,
+            "Text Muted" to TextMuted,
+            "Placeholder" to Placeholder,
+            "Border" to Border,
+            "Error" to Error,
+        )
 
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(BackgroundLight)
-            .verticalScroll(rememberScrollState())
-            .padding(16.dp),
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .background(BackgroundLight)
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         colors.forEach { (name, color) ->
@@ -78,12 +80,16 @@ private fun ThemeSample() {
 
 // Remove later
 @Composable
-private fun ThemeItem(name: String, color: Color) {
+private fun ThemeItem(
+    name: String,
+    color: Color,
+) {
     Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp)
-            .background(color),
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .background(color),
         contentAlignment = Alignment.CenterStart,
     ) {
         Text(

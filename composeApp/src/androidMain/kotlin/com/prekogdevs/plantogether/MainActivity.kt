@@ -26,11 +26,11 @@ import com.prekogdevs.plantogether.ui.theme.Border
 import com.prekogdevs.plantogether.ui.theme.Error
 import com.prekogdevs.plantogether.ui.theme.OnPrimary
 import com.prekogdevs.plantogether.ui.theme.Placeholder
+import com.prekogdevs.plantogether.ui.theme.PlanTogetherTheme
 import com.prekogdevs.plantogether.ui.theme.PrimaryDark
 import com.prekogdevs.plantogether.ui.theme.PrimaryMedium
 import com.prekogdevs.plantogether.ui.theme.TextMuted
 import com.prekogdevs.plantogether.ui.theme.TextPrimary
-import com.prekogdevs.plantogether.ui.theme.PlanTogetherTheme
 import com.prekogdevs.plantogether.ui.theme.TextSecondary
 
 class MainActivity : ComponentActivity() {

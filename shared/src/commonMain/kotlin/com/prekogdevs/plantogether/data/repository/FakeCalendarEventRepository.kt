@@ -71,16 +71,13 @@ private fun createDummyEvents(): List<CalendarEvent> {
 }
 
 class FakeCalendarEventRepository : CalendarEventRepository {
-
     private val events = MutableStateFlow(createDummyEvents())
 
-    override fun getEventsByDate(date: LocalDate): Flow<List<CalendarEvent>> {
-        return events.map { events -> events.filter { it.date == date } }
-    }
+    override fun getEventsByDate(date: LocalDate): Flow<List<CalendarEvent>> =
+        events.map { events -> events.filter { it.date == date } }
 
-    override suspend fun getEventById(id: Long): CalendarEvent {
-        return events.value.first { event -> event.id == id }
-    }
+    override suspend fun getEventById(id: Long): CalendarEvent =
+        events.value.first { event -> event.id == id }
 
     override suspend fun insert(event: CalendarEvent): Long {
         val newEventId = (events.value.maxOfOrNull { it.id } ?: 0) + 1

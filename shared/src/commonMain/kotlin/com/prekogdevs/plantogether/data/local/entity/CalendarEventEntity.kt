@@ -17,5 +17,5 @@ data class CalendarEventEntity(
     val imageUrl: String?,
     val recurrence: String,
     val creatorId: Long,
-    val groupId: Long,
+    val groupId: Long
 )

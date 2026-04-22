@@ -9,5 +9,5 @@ data class Notification(
     val message: String,
     val createdAt: LocalDateTime,
     val isRead: Boolean,
-    val userId: Long,
+    val userId: Long
 )

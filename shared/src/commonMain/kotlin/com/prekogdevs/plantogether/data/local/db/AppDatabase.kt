@@ -11,7 +11,7 @@ import com.prekogdevs.plantogether.data.local.entity.CalendarEventEntity
 
 @Database(
     entities = [CalendarEventEntity::class],
-    version = 1,
+    version = 1
 )
 @TypeConverters(DateTimeConverters::class)
 @ConstructedBy(AppDatabaseConstructor::class)

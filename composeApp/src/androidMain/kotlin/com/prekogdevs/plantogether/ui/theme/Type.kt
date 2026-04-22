@@ -13,7 +13,7 @@ val InterFontFamily =
         Font(R.font.inter_regular, FontWeight.Normal),
         Font(R.font.inter_medium, FontWeight.Medium),
         Font(R.font.inter_semibold, FontWeight.SemiBold),
-        Font(R.font.inter_bold, FontWeight.Bold),
+        Font(R.font.inter_bold, FontWeight.Bold)
     )
 
 val AppTypography =
@@ -22,42 +22,42 @@ val AppTypography =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.Bold,
-                fontSize = 28.sp,
+                fontSize = 28.sp
             ),
         titleLarge =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 22.sp,
+                fontSize = 22.sp
             ),
         titleMedium =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 18.sp,
+                fontSize = 18.sp
             ),
         bodyLarge =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 16.sp,
+                fontSize = 16.sp
             ),
         bodyMedium =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.Normal,
-                fontSize = 14.sp,
+                fontSize = 14.sp
             ),
         labelMedium =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.Medium,
-                fontSize = 13.sp,
+                fontSize = 13.sp
             ),
         labelSmall =
             TextStyle(
                 fontFamily = InterFontFamily,
                 fontWeight = FontWeight.Normal,
-                fontSize = 13.sp,
-            ),
+                fontSize = 13.sp
+            )
     )

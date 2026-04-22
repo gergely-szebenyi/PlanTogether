@@ -20,7 +20,7 @@ actual fun createDataStore(): DataStore<Preferences> =
                     inDomain = NSUserDomainMask,
                     appropriateForURL = null,
                     create = false,
-                    error = null,
+                    error = null
                 )!!
                 .path!!
         "$documentsPath/$DATASTORE_FILE_NAME".toPath()

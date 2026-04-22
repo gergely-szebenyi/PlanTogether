@@ -15,7 +15,7 @@ fun CalendarEventEntity.toDomain(): CalendarEvent =
         imageUrl = imageUrl,
         recurrence = Recurrence.valueOf(recurrence),
         creatorId = creatorId,
-        groupId = groupId,
+        groupId = groupId
     )
 
 fun CalendarEvent.toEntity(): CalendarEventEntity =
@@ -29,5 +29,5 @@ fun CalendarEvent.toEntity(): CalendarEventEntity =
         imageUrl = imageUrl,
         recurrence = recurrence.name,
         creatorId = creatorId,
-        groupId = groupId,
+        groupId = groupId
     )

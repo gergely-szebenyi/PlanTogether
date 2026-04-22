@@ -17,7 +17,7 @@ actual fun getDatabaseBuilder(): RoomDatabase.Builder<AppDatabase> {
                 inDomain = NSUserDomainMask,
                 appropriateForURL = null,
                 create = false,
-                error = null,
+                error = null
             )!!
             .path!!
 

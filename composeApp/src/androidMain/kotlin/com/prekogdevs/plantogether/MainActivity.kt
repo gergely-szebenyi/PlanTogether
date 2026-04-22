@@ -60,7 +60,7 @@ private fun ThemeSample() {
             "Text Muted" to TextMuted,
             "Placeholder" to Placeholder,
             "Border" to Border,
-            "Error" to Error,
+            "Error" to Error
         )
 
     Column(
@@ -70,7 +70,7 @@ private fun ThemeSample() {
                 .background(BackgroundLight)
                 .verticalScroll(rememberScrollState())
                 .padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         colors.forEach { (name, color) ->
             ThemeItem(name = name, color = color)
@@ -82,7 +82,7 @@ private fun ThemeSample() {
 @Composable
 private fun ThemeItem(
     name: String,
-    color: Color,
+    color: Color
 ) {
     Box(
         modifier =
@@ -90,12 +90,12 @@ private fun ThemeItem(
                 .fillMaxWidth()
                 .height(56.dp)
                 .background(color),
-        contentAlignment = Alignment.CenterStart,
+        contentAlignment = Alignment.CenterStart
     ) {
         Text(
             text = name,
             color = if (color == BackgroundLight || color == Border || color == Placeholder) TextPrimary else OnPrimary,
-            modifier = Modifier.padding(start = 16.dp),
+            modifier = Modifier.padding(start = 16.dp)
         )
     }
 }

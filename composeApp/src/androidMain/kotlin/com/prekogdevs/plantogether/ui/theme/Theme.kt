@@ -17,7 +17,7 @@ private val LightColorScheme =
         onTertiary = TextPrimary,
         onBackground = TextPrimary,
         onSurface = TextPrimary,
-        outline = Border,
+        outline = Border
     )
 
 @Composable
@@ -25,6 +25,6 @@ fun PlanTogetherTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColorScheme,
         typography = AppTypography,
-        content = content,
+        content = content
     )
 }

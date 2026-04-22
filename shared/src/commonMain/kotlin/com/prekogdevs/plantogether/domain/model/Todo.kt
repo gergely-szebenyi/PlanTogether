@@ -11,5 +11,5 @@ data class Todo(
     val isCompleted: Boolean,
     val creatorId: Long,
     val assigneeId: Long?,
-    val groupId: Long,
+    val groupId: Long
 )

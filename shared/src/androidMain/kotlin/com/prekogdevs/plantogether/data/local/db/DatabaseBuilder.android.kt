@@ -9,5 +9,5 @@ actual fun getDatabaseBuilder(): RoomDatabase.Builder<AppDatabase> =
     Room.databaseBuilder(
         context = appContext,
         klass = AppDatabase::class.java,
-        name = DATABASE_NAME,
+        name = DATABASE_NAME
     )

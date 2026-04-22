@@ -7,7 +7,7 @@ import androidx.datastore.preferences.core.longPreferencesKey
 import kotlinx.coroutines.flow.first
 
 class AppPreferences(
-    private val dataStore: DataStore<Preferences>,
+    private val dataStore: DataStore<Preferences>
 ) {
     companion object {
         private val USER_ID_KEY = longPreferencesKey("logged_in_user_id")
